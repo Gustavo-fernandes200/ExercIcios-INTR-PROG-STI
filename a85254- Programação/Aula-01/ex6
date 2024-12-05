@@ -1,0 +1,42 @@
+Inicio
+
+    # Inicializar variáveis
+    melhorNota <- 0
+    melhorAluno <- ""
+    totalNotas <- 0
+    contadorAlunos <- 0
+
+    Enquanto verdadeiro Faça
+        # Ler nome do aluno
+        Escrever "Digite o nome do aluno (ou 'STOP' para encerrar):"
+        Ler nomeAluno
+
+        # Verificar se é hora de encerrar o programa
+        Se nomeAluno = "STOP" Então
+            Se contadorAlunos > 0 Então
+                media <- totalNotas / contadorAlunos
+                Escrever "O aluno melhor classificado é:", melhorAluno, "com nota:", melhorNota
+                Escrever "A média das notas da turma é:", media
+            Senão
+                Escrever "Nenhum aluno foi inserido."
+            Fim Se
+            Parar Loop
+        Fim Se
+
+        # Ler nota do aluno
+        Escrever "Digite a nota de programação para", nomeAluno, ":"
+        Ler nota
+
+        # Verificar se a nota é a melhor até agora
+        Se nota > melhorNota Então
+            melhorNota <- nota
+            melhorAluno <- nomeAluno
+        Fim Se
+
+        # Atualizar total de notas e contador de alunos
+        totalNotas <- totalNotas + nota
+        contadorAlunos <- contadorAlunos + 1
+
+    Fim Enquanto
+
+Fim

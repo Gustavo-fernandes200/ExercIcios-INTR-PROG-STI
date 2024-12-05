@@ -1,0 +1,27 @@
+    Entrada: matematica, portugues, ingles, geografia
+    Inicio
+
+        # Ler notas das disciplinas
+        Escrever "Digite a nota de Matemática:"
+        Ler matematica
+
+        Escrever "Digite a nota de Português:"
+        Ler portugues
+
+        Escrever "Digite a nota de Inglês:"
+        Ler ingles
+
+        Escrever "Digite a nota de Geografia:"
+        Ler geografia
+
+        # Calcular média
+        media <- (matematica + portugues + ingles + geografia) / 4
+
+        # Verificar se a média é maior ou igual a 9,5
+        Se media >= 9.5 Então
+            Escrever "Aprovado"
+        Senão
+            Escrever "Reprovado"
+        Fim Se
+
+    Fim

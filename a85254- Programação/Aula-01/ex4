@@ -1,0 +1,16 @@
+Função Fatorial(n):
+    Escreva "Digite um número inteiro não negativo:"
+    Leia n
+
+    Se n < 0 Então
+        Escreva "Erro: Número negativo não possui fatorial"
+    Senão Se n = 0 Então
+        Escreva "O fatorial de 0 é 1"
+    Senão
+        resultado = 1
+        Para i de 1 até n Faça
+            resultado = resultado * i
+        Fim Para
+        Escreva "O fatorial de", n, "é", resultado
+    Fim Se
+Fim Função

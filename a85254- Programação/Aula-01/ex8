@@ -1,0 +1,31 @@
+
+
+Função PesquisaSequencial(vetor, tamanho, valorPesquisa)
+    Para i de 0 até tamanho - 1 faça
+        Se vetor[i] = valorPesquisa Então
+            Retornar Verdadeiro
+        Fim Se
+    Fim Para
+
+    Retornar Falso
+Fim Função
+
+Inicio
+    # Inicializar vetor e tamanho
+    vetor <- [3, 7, 1, 9, 5]
+    tamanho <- 5
+
+    # Solicitar valor para pesquisa
+    Escrever "Digite o valor a ser pesquisado:"
+    Ler valorPesquisa
+
+    # Chamar a função de pesquisa sequencial
+    resultado <- PesquisaSequencial(vetor, tamanho, valorPesquisa)
+
+    # Exibir resultado
+    Se resultado Então
+        Escrever "O valor", valorPesquisa, "foi encontrado no vetor."
+    Senão
+        Escrever "O valor", valorPesquisa, "não foi encontrado no vetor."
+    Fim Se
+Fim

@@ -1,0 +1,26 @@
+    Entrada: numero (número a ser verificado se é primo)
+    Saída: primo (mensagem "Primo" ou "Não Primo")
+
+    Inicio
+
+        # Verificar se um número é primo
+        Escrever "Digite um número para verificar se é primo:"
+        Ler numero
+        Se numero <= 1 Então
+            primo <- "Não Primo"
+        Senão
+            contador <- 2
+            primo <- "Primo"
+            Enquanto contador <= numero / 2 Faça
+                Se numero % contador == 0 Então
+                    primo <- "Não Primo"
+                    Parar Loop
+                Fim Se
+                contador <- contador + 1
+            Fim Enquanto
+        Fim Se
+
+        # Exibir resultado
+        Escrever "Resultado:", primo
+
+    Fim

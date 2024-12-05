@@ -1,0 +1,33 @@
+Converta para decimal os seguintes números binários:
+
+101 = 1 x 2(2) + 0 x 2(1) + 1 x 2(0) = 4 + 0 + 1 = 5
+
+1101 = 1 x 2(3) 1 x 2(2) + 0 x 2(1) + 1 x 2(0) = 8 + 4 + 0 + 1 = 13
+
+120 =
+
+Converta para binário os seguintes números decimais:
+
+120 = 0111 1000
+
+255 = 1111 1111
+
+1 = 0001
+
+Adicione os seguintes números em binário:
+
+1001 + 001 =
+
+ 1001
++0001
+−−−−−−−−−−−
++1010
+
+
+Quantos bits e quantos Bytes tem o seguinte número:
+
+0000100111011101 =
+
+                       Número de Bytes                16
+Número de Bytes = --------------------------- =  -----------  = 2 Bytes
+                               8                       8

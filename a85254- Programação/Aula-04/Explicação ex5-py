@@ -1,0 +1,25 @@
+linha
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+(linha 6 - 9 )
+
+def imprimir_tabuleiro(tabuleiro):
+    for linha in tabuleiro:
+        print(" ".join(map(str, linha)))
+    print()
+
+Explicação :
+
+Então : ´ for linha in tabuleiro: `        - Faz criar um trecho de loop no qual itera através de cada lista dentro da lista  ´ tabuleiro `.
+                                             Que representar a cada lista interna representa uma linha do tabuleiro.
+
+         " ".join(map(str, linha))         - Aqui, map(str, linha) converte cada elemento da lista linha em uma string.
+                                              O método join() então junta todos os elementos da lista numa única string, separando cada elemento por um espaço.
+
+         print(" ".join(map(str, linha)))  - Esta linha imprime a string que representa uma linha do tabuleiro. Cada elemento da linha é separado por um espaço.
+
+         print()                           -  Esta linha imprime uma linha em branco após cada linha do tabuleiro. Isso é feito para criar uma separação visual entre as linhas do tabuleiro.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

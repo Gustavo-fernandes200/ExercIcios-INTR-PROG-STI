@@ -1,0 +1,47 @@
+
+from time import sleep
+
+A biblioteca time fornece várias funções relacionadas ao tempo em Python.
+sleep é uma função dessa biblioteca que faz o programa pausar a execução por um determinado número de segundos.
+No código do jogo da velha, sleep(1.5) é utilizado para introduzir uma pausa de 1.5 segundos antes do computador fazer sua jogada.
+Isso cria um pequeno atraso para simular o pensamento do computador antes de realizar sua jogada.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+from random import randint
+
+A biblioteca random oferece funcionalidades relacionadas à geração de números aleatórios.
+randint é uma função que gera um número inteiro aleatório em um intervalo especificado.
+No código, randint(1, 9) é usado para gerar uma posição aleatória para a jogada do computador no jogo da velha.
+Isso simula o comportamento do computador escolhendo uma posição no tabuleiro de forma aleatória.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+import sys
+
+sys é um módulo que fornece acesso a algumas variáveis usadas ou mantidas pelo interpretador Python, além de interagir fortemente com o ambiente do sistema.
+sys.exit(0) é usado para encerrar o programa. Nesse contexto, é chamado quando o jogador decide não jogar novamente, e o programa é encerrado com código de saída 0 (sem erros).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+pts_jogador = 0
+
+Esta variável é utilizada para armazenar a pontuação do jogador ao longo do jogo. Inicialmente, é definida como zero.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+pts_pc = 0
+
+Similar à variável pts_jogador, esta armazena a pontuação do computador. Também é inicializada com zero.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+nome_jogador = input("Digite seu nome para começar o jogo: ")
+
+Esta linha solicita ao jogador que insira seu nome antes de começar o jogo.
+input é uma função que recebe dados do usuário, e a mensagem entre parênteses é exibida para orientar o usuário sobre o que deve ser digitado.
+A entrada do jogador é armazenada na variável nome_jogador, que será usada posteriormente para personalizar a interação com o jogador durante o jogo.
+
+-----------------------------------------------------------------------------------------------------------------------------
+

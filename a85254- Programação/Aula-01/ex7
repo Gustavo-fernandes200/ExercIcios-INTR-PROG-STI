@@ -1,0 +1,20 @@
+    Entrada: numero (número inteiro)
+    Saída: maiorAlgarismo (maior algarismo do número)
+
+    Inicio
+
+        # Inicializar variáveis
+        numeroOriginal <- numero
+        maiorAlgarismo <- 0
+
+        Enquanto numero > 0 Faça
+            algarismo <- numero % 10
+            Se algarismo > maiorAlgarismo Então
+                maiorAlgarismo <- algarismo
+            Fim Se
+            numero <- numero / 10
+        Fim Enquanto
+
+        Escrever "O maior algarismo em", numeroOriginal, "é:", maiorAlgarismo
+
+    Fim
